@@ -161,20 +161,21 @@ const App: Props = () => {
                     <button
                         className="btns__element"
                         onClick={handleAddClick}
-                        disabled={isInputRendered}
+                        disabled={isInputRendered || !selectedNodeId}
                     >
                         Add
                     </button>
                     <button
                         className="btns__element"
                         onClick={handleRemoveClick}
-                        disabled={isInputRendered}
+                        disabled={isInputRendered || !selectedNodeId}
                     >
                         Remove
                     </button>
                     <button
                         className="btns__element"
                         onClick={handleEditClick}
+                        disabled={!selectedNodeId}
                     >
                         Edit
                     </button>
