@@ -1,0 +1,12 @@
+.node {
+    list-style: none;
+}
+
+.node__name {
+    cursor: pointer;
+    margin: 0;
+}
+
+.node__name_selected {
+    background-color: yellow;
+}
